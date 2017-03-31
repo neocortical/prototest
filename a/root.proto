@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package prototest;
+option go_package = "github.com/neocortical/prototest/a";
+
+import "b/foo.proto";
+import "b/bar.proto";
+import "c/baz.proto";
+import "c/qux.proto";
+
+message RootMessage {
+  FooMessage foo = 1;
+  BarMessage bar = 2;
+  BazMessage baz = 3;
+  QuxMessage qux = 4;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package prototest;
+option go_package = "github.com/neocortical/prototest/b";
+
+message FooMessage {
+  string foo = 1;
+}
